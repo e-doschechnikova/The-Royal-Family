@@ -1,8 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap");
 
 :root {
-  --header-royal-color: #23368042;
-  --footer-royal-color: #23368042;
+  --header-royal-color: #edeef5;
+  --footer-royal-color: #edeef5;
   --royal-color: #233580;
   --text-color: #000000;
   --instagram-color: rgb(209, 35, 142);
@@ -28,9 +28,8 @@ body {
 .main-header {
   color: #000;
   width: 100%;
-  height: 175px;
-  padding: 10px;
-  margin-bottom: 50px;
+  padding: 10px 0 10px 0;
+  margin-bottom: 30px;
   background-color: var(--header-royal-color);
 }
 
@@ -40,8 +39,11 @@ body {
 }
 
 h1 {
-  padding: 5px;
-  font-weight: bold;
+  font-size: 30px;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  margin: 0;
+  padding: 0;
 }
 
 .container {
@@ -116,13 +118,15 @@ h3 {
 }
 
 .main-footer .container-footer {
+  background: url(logo/Postage\ Stamp-two.png);
+  background-repeat: no-repeat;
+  background-size: 150px;
   display: flex;
   align-items: baseline;
   justify-content: space-around;
 }
 
 .footer-contacts {
-  width: 320px;
   margin: 0;
   margin-top: 40px;
   margin-right: 80px;
@@ -189,27 +193,32 @@ span {
   transition: 1s ease;
 }
 
-.footer-copyright {
-  width: 170px;
+.header-copyright {
   margin: 0;
   margin-left: auto;
   text-align: center;
 }
 
-.footer-copyright .button {
+.header-copyright .button {
   display: block;
-  margin-top: 5px;
-  width: min-content;
+  cursor: pointer;
+}
+
+.button-copyright {
+  display: inline-block;
+  padding: 5px;
+  border: none;
 }
 
 .footer-copyright b {
-  width: 160px;
+  width: 143px;
   display: block;
 }
 
 .footer-copyright a:hover,
 .footer-copyright a:focus {
-  color: black;
-  transition: 1s ease;
-  background-color: #fff;
+  color: #000000;
+  transition: 1.5s ease;
+  background-color: #dbdbdf;
+  border-radius: 20px;
 }
