@@ -78,7 +78,7 @@ h3 {
   align-items: center;
   font-size: 11px;
   width: 90px;
-  padding: 5px;
+  padding: 10px 5px 5px;
   margin: 0;
 }
 
@@ -120,6 +120,11 @@ li.member {
   justify-content: center;
   padding-bottom: 25px;
 }
+
+.container-main section {
+  height: 184px;
+}
+
 .container-main h3 {
   padding-top: 10px;
 }
@@ -233,18 +238,12 @@ li.member {
 }
 
 .main-footer .container-footer {
-  background: url(logo/Postage\ Stamp-two.png);
-  background-repeat: no-repeat;
-  background-size: 150px;
   display: flex;
-  align-items: baseline;
-  justify-content: space-around;
+  align-items: center;
+  justify-content: space-evenly;
 }
 
 .footer-contacts {
-  margin: 0;
-  margin-top: 40px;
-  margin-right: 80px;
   margin-bottom: 40px;
 }
 
@@ -306,6 +305,12 @@ span {
 .social-button-facebook:focus {
   color: var(--facebook-color);
   transition: 1s ease;
+}
+
+.footer-copyright {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .header-copyright {
