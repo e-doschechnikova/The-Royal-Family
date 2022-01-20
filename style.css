@@ -1,10 +1,17 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap");
 
 :root {
-  --header-royal-color: #edeef5;
-  --footer-royal-color: #edeef5;
   --royal-color: #233580;
+
+  --header-royal-color: #edeef5;
+
   --text-color: #000000;
+
+  --elizabeth-color: #3d5dda44;
+  --gloster-color: rgba();
+  --kents-color: rgba();
+
+  --footer-royal-color: #edeef5;
   --instagram-color: rgb(209, 35, 142);
   --youtube-color: rgb(236, 0, 0);
   --facebook-color: #233580;
@@ -46,41 +53,6 @@ h1 {
   padding: 0;
 }
 
-.container {
-  width: 100%;
-}
-
-section {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  border-radius: 10px;
-  list-style: none;
-  padding: 10px;
-  width: fit-content;
-  margin: 5px;
-}
-
-.members {
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
-}
-
-.member-divorce {
-  border: 1.5px solid orangered;
-}
-
-li {
-  list-style: none;
-  padding: 5px;
-}
-
-li.member {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-}
-
 img {
   border-radius: 6px;
   align-items: center;
@@ -90,31 +62,174 @@ img.logo {
   border: none;
 }
 
+section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+  padding: 3px;
+  margin: 5px;
+}
+
 h3 {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 12px;
+  font-size: 11px;
   width: 90px;
   padding: 5px;
   margin: 0;
 }
 
-.container-children {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+.member-divorce {
+  border: 4px solid rgb(175, 12, 12);
 }
 
-.container-great-grandson {
+li {
+  list-style: none;
+  padding: 2px;
+}
+
+.members li {
+  padding: 2px 5px;
+}
+
+.members li:first-child {
+  padding-left: 2px;
+}
+
+.members li:last-child {
+  padding-right: 2px;
+}
+
+li.member {
+  display: flex;
+  flex-direction: column;
+}
+/* -------------------------------------------------------------------- */
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+}
+
+.container-main {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 25px;
+}
+.container-main h3 {
+  padding-top: 10px;
+}
+
+.members-parents-Eli {
+  color: var(--text-color);
+  background-color: var(--elizabeth-color);
+}
+
+.container-children {
+  display: flex;
+  justify-content: space-around;
+}
+
+.container-children h3 {
+  padding-top: 10px;
+}
+
+.container-Elizabeth section {
+  color: var(--text-color);
+  background-color: var(--elizabeth-color);
+}
+
+.container-parents-Elizabeth {
+  display: flex;
+  justify-content: center;
+  padding: 20px 0 40px 0;
+}
+
+.container-children-Elizabeth {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 40px;
+}
+
+.container-children-Elizabeth section {
+  margin: 0 45px;
+}
+
+.container-children-Elizabeth h3 {
+  padding-top: 10px;
+}
+
+.container-grandchildren-Elizabeth {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
+  padding-bottom: 40px;
 }
+
+.container-grandchildren-Elizabeth h3 {
+  padding-top: 10px;
+}
+
+.container-grandchildren-Elizabeth section {
+  margin-right: 90px;
+}
+
+.container-great-grandchildren-Elizabeth {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.container-great-grandchildren-Elizabeth section {
+  height: 205px;
+}
+
+.child-charles,
+.child-anna,
+.child-andrew,
+.child-edward {
+  display: flex;
+  align-items: normal;
+  margin: 0 25px;
+}
+
+.child-charles section,
+.child-anna section,
+.child-andrew section,
+.child-edward section {
+  margin-right: 10px;
+}
+
+.child-will,
+.child-harry,
+.child-piter,
+.child-zara,
+.child-beatrice,
+.child-evgenia {
+  display: flex;
+  align-items: inherit;
+  margin: 0 25px;
+}
+
+.child-will h3,
+.child-harry h3,
+.child-piter h3,
+.child-zara h3,
+.child-beatrice h3,
+.child-evgenia h3 {
+  padding-top: 10px;
+}
+
+/* ---------------------------------------------------------------- */
 
 .main-footer {
   background-color: var(--footer-royal-color);
   color: var(--text-color);
-  height: max-content;
+  margin-top: 30px;
 }
 
 .main-footer .container-footer {
