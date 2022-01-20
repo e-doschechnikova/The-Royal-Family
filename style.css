@@ -9,7 +9,7 @@
 
   --elizabeth-color: #3d5dda44;
   --gloster-color: #b46270b2;
-  --kents-color: rgba();
+  --kents-color: rgba(45, 167, 137, 0.39);
 
   --footer-royal-color: #edeef5;
   --instagram-color: rgb(209, 35, 142);
@@ -145,9 +145,9 @@ li.member {
 }
 
 /* ------------------------FAMILY ELIZABETH------------------------ */
-.container-Elizabeth {
+/* .container-Elizabeth {
   display: none;
-}
+} */
 
 .container-Elizabeth section {
   color: var(--text-color);
@@ -162,24 +162,35 @@ li.member {
 }
 
 .container-children-Elizabeth,
-.container-children-Richard {
+.container-children-Richard,
+.container-children-Edward,
+.container-children-Alexandra,
+.container-children-Michael {
   display: flex;
   justify-content: center;
   padding-bottom: 40px;
 }
 
 .container-children-Elizabeth section,
-.container-children-Richard section {
+.container-children-Richard section,
+.container-children-Edward section,
+.container-children-Alexandra section,
+.container-children-Michael section {
   margin: 0 45px;
 }
 
 .container-children-Elizabeth h3,
-.container-children-Richard h3 {
+.container-children-Richard h3,
+.container-children-George h3,
+.container-children-Edward h3,
+.container-children-Alexandra h3,
+.container-children-Michael h3 {
   padding-top: 10px;
 }
 
 .container-grandchildren-Elizabeth,
-.container-grandchildren-Richard {
+.container-grandchildren-Richard,
+.container-grandchildren-George {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -192,7 +203,8 @@ li.member {
 }
 
 .container-grandchildren-Elizabeth section,
-.container-grandchildren-Richard section {
+.container-grandchildren-Richard section,
+.container-grandchildren-George section {
   margin-right: 90px;
 }
 
@@ -209,7 +221,10 @@ li.member {
 .child-charles,
 .child-anna,
 .child-andrew,
-.child-edward {
+.child-edward,
+.child-edward-two,
+.child-alexandra,
+.child-michael {
   display: flex;
   align-items: normal;
   margin: 0 25px;
@@ -218,7 +233,15 @@ li.member {
 .child-charles section,
 .child-anna section,
 .child-andrew section,
-.child-edward section {
+.child-edward section,
+.child-edward-two section,
+.child-alexandra section,
+.child-michael section,
+.child-george section,
+.child-helena section,
+.child-nikolas section,
+.child-james section,
+.child-marina section {
   margin-right: 10px;
 }
 
@@ -230,7 +253,12 @@ li.member {
 .child-evgenia,
 .child-alex,
 .child-davina,
-.child-rose {
+.child-rose,
+.child-george,
+.child-helena,
+.child-nikolas,
+.child-james,
+.child-marina {
   display: flex;
   align-items: inherit;
   margin: 0 25px;
@@ -244,10 +272,20 @@ li.member {
 .child-evgenia h3,
 .child-alex h3,
 .child-davina h3,
-.child-rose h3 {
+.child-rose h3,
+.child-george h3,
+.child-helena h3,
+.child-nikolas h3,
+.child-james h3,
+.child-marina h3 {
   padding-top: 10px;
 }
 /* ----------------------------FAMILY HENRY---------------------------- */
+
+/* .container-Henry {
+  display: none;
+} */
+
 .container-child-Henry {
   display: flex;
   align-items: baseline;
@@ -255,10 +293,6 @@ li.member {
   margin-right: 90px;
 }
 
-/* .container-Henry section {
-  color: var(--text-color);
-  background-color: var(--gloster-color);
-} */
 .container-parents-Henry section,
 .container-child-Henry section,
 .container-children-Richard section,
@@ -267,11 +301,6 @@ li.member {
   background-color: var(--gloster-color);
 }
 
-/* .members-parents-Henry section {
-  color: var(--text-color);
-  background-color: var(--gloster-color);
-} */
-
 .container-parents-Richard {
   margin-left: 90px;
 }
@@ -279,6 +308,38 @@ li.member {
 .container-William .member {
   display: flex;
   justify-content: center;
+}
+/* ----------------------------FAMILY GEORGE---------------------------- */
+.container-children-George {
+  display: flex;
+  justify-content: center;
+  margin: 40px 0;
+}
+
+.container-grandchildren-George-two {
+  display: flex;
+  justify-content: center;
+}
+
+.container-children-George section {
+  margin: 0 45px;
+}
+
+.child-alexandra section {
+  margin-left: 30px;
+}
+
+.child-george,
+.child-helena {
+  display: flex;
+}
+
+.container-parents-Goerge section,
+.container-grandchildren-George-two section,
+.container-children-George section,
+.container-grandchildren-George section {
+  color: var(--text-color);
+  background-color: var(--kents-color);
 }
 
 /* ----------------------------FOOTER---------------------------- */
