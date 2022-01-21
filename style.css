@@ -10,6 +10,7 @@
   --eduard-color: #c6a78f71;
   --elizabeth-color: #3d5dda44;
   --gloster-color: #ecc8c9cc;
+  --will-color: #7a282b75;
   --kents-color: #a0b3a8b9;
   --margaret-color: #bb99b7c9;
 
@@ -171,7 +172,6 @@ li.member {
 }
 
 .container-parents-Elizabeth,
-.container-parents-Richard,
 .container-parents-Margaret {
   display: flex;
   justify-content: center;
@@ -321,9 +321,17 @@ li.member {
 
 .container-child-Henry {
   display: flex;
-  align-items: baseline;
   justify-content: center;
-  margin-right: 90px;
+  margin-bottom: 40px;
+}
+
+.container-child-Henry section {
+  margin-left: 70px;
+}
+
+.container-child-Henry .members-WillGlo {
+  color: var(--text-color);
+  background-color: var(--will-color);
 }
 
 .container-parents-Henry section,
