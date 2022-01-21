@@ -118,6 +118,15 @@ li.member {
   align-content: center;
 }
 
+.containerShow {
+opacity: 0.5;
+}
+
+.containerShow.active{
+
+}
+
+
 /* ------------------------FAMILY MAIN------------------------ */
 .container-main {
   display: flex;
@@ -155,9 +164,9 @@ li.member {
 /* ------------------------FAMILY ELIZABETH------------------------ */
 /* .container-Elizabeth {
   display: none;
-}
+} */
 
-.container-Margaret {
+/* .container-Margaret {
   display: none;
 } */
 
@@ -351,6 +360,10 @@ li.member {
   justify-content: center;
 }
 /* ----------------------------FAMILY GEORGE---------------------------- */
+/* .container-George {
+  display: none;
+} */
+
 .container-children-George {
   display: flex;
   justify-content: center;
