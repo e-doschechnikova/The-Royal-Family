@@ -1,20 +1,30 @@
-//1 лисенер на на основателей
-//2 по клику на основателей выводить их номер
-//3 получить потомков
-//4 менять соответствующий стиль у потомков
-
 const containers = document.querySelectorAll(".containerShow");
-
-console.log(containers);
+const containersChild = document.querySelectorAll(".childShow");
+const windsor = document.querySelector(".containerWindsor");
 
 containers.forEach((parents, id) => {
   parents.addEventListener("click", () => {
-    console.log(id);
+    makeActive(id);
+    makeActiveChild(id - 1);
   });
 });
 
-// function removeActiveClasses() {
-//   containers.forEach((containerShow) => {
-//     containerShow.classList.remove("active");
+function makeActive(id) {
+  containers.forEach((parents) => {
+    parents.classList.remove("active");
+  });
+  containers[id].classList.add("active");
+}
+
+function makeActiveChild(id) {
+  containersChild.forEach((child) => {
+    child.classList.remove("active");
+  });
+  containersChild[id].classList.add("active");
+}
+
+// containersChild.forEach((child, id) => {
+//   child.addEventListener("click", () => {
+//     makeActiveChild(id);
 //   });
-// }
+// });

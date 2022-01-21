@@ -74,6 +74,7 @@ section {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
   padding: 3px;
   margin: 5px;
+  cursor: pointer;
 }
 
 h3 {
@@ -118,14 +119,17 @@ li.member {
   align-content: center;
 }
 
-.containerShow {
-opacity: 0.5;
+.containerShow,
+.childShow,
+.containerWindsor {
+  opacity: 0.5;
 }
 
-.containerShow.active{
-
+.containerShow.active,
+.childShow.active,
+.containerWindsor {
+  opacity: 1;
 }
-
 
 /* ------------------------FAMILY MAIN------------------------ */
 .container-main {
