@@ -5,7 +5,7 @@ const windsor = document.querySelector(".containerWindsor");
 containers.forEach((parents, id) => {
   parents.addEventListener("click", () => {
     makeActive(id);
-    makeActiveChild(id - 1);
+    makeActiveChild(id);
   });
 });
 
