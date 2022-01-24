@@ -120,15 +120,28 @@ li.member {
 }
 
 .containerShow,
-.childShow,
 .containerWindsor {
-  opacity: 0.5;
+  opacity: 0.3;
 }
 
 .containerShow.active,
 .childShow.active,
 .containerWindsor {
   opacity: 1;
+}
+
+.childShow {
+  opacity: 0;
+  transition: opacity 2.5s ease-out;
+  height: 0;
+  overflow: hidden;
+}
+
+.childShow.active {
+  display: block;
+  opacity: 1;
+  transition: opacity 2.5s ease-out;
+  height: auto;
 }
 
 /* ------------------------FAMILY MAIN------------------------ */
@@ -159,26 +172,30 @@ li.member {
 .container-children {
   display: flex;
   justify-content: space-around;
+  margin-bottom: 30px;
 }
 
 .container-children h3 {
   padding-top: 10px;
 }
 
-.children-Eduard {
+.children-Eduard-child {
   display: flex;
   justify-content: center;
-  padding: 20px 0 20px 0;
 }
 
-.children-Eduard section {
+.children-Eduard {
+  display: none;
+}
+
+.children-Eduard-child section {
   width: 200px;
   height: 184px;
   color: var(--text-color);
   background-color: var(--eduard-color);
 }
 
-.children-Eduard p {
+.children-Eduard-child p {
   display: flex;
   align-items: center;
   font-size: 25px;
@@ -208,7 +225,11 @@ li.member {
 .container-parents-Margaret {
   display: flex;
   justify-content: center;
-  padding: 20px 0 40px 0;
+  padding: 0px 0 40px 0;
+}
+
+.container-parents-Margaret {
+  padding-top: 30px;
 }
 
 .container-children-Elizabeth,
@@ -391,7 +412,7 @@ li.member {
 .container-children-George {
   display: flex;
   justify-content: center;
-  margin: 40px 0;
+  margin: 0 0 40px 0;
 }
 
 .container-grandchildren-George-two {
