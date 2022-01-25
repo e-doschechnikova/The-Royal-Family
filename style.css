@@ -62,6 +62,10 @@ img {
   align-items: center;
 }
 
+img:hover {
+  box-shadow: 10px 10px 10px #2336806b;
+}
+
 img.logo {
   border: none;
 }
