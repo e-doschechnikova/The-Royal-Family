@@ -206,6 +206,15 @@ li.member {
   font-weight: bold;
 }
 
+.container-parents-John section {
+  background-color: #717b8eb4;
+  height: 178px;
+}
+
+.container-parents-John {
+  display: flex;
+  align-items: center;
+}
 /* ------------------------FAMILY ELIZABETH------------------------ */
 /* .container-Elizabeth {
   display: none;
