@@ -63,7 +63,7 @@ img {
 }
 
 img:hover {
-  box-shadow: 10px 10px 10px #2336806b;
+  box-shadow: 10px 10px 10px #23368065;
 }
 
 img.logo {
@@ -193,17 +193,9 @@ li.member {
 }
 
 .children-Eduard-child section {
-  width: 200px;
   height: 184px;
   color: var(--text-color);
   background-color: var(--eduard-color);
-}
-
-.children-Eduard-child p {
-  display: flex;
-  align-items: center;
-  font-size: 25px;
-  font-weight: bold;
 }
 
 .container-parents-John section {
