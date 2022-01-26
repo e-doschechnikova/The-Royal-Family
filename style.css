@@ -57,32 +57,27 @@ h1 {
   padding: 0;
 }
 
+img.logo {
+  border: none;
+}
+/* ----------------------------MAIN---------------------------- */
 img {
   border-radius: 6px;
   align-items: center;
-  transition: box-shadow 0.5s, transform 0.5s;
+  transition: box-shadow 0.5s, transform 0.7s;
 }
 
 img:hover {
-  box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px,
+  box-shadow: rgba(45, 35, 66, 0.6) 0 8px 10px,
     rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #d6d6e7 0 -3px 0 inset;
   transform: translateY(-2px);
 }
-
-/* img:focus {
-  box-shadow: #d6d6e7 0 0 0 1.5px inset, rgba(45, 35, 66, 0.4) 0 2px 4px,
-    rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #d6d6e7 0 -3px 0 inset;
-} */
 
 img:active {
   box-shadow: #d6d6e7 0 3px 7px inset;
   transform: translateY(2px);
 }
 
-img.logo {
-  border: none;
-}
-/* ----------------------------MAIN---------------------------- */
 section {
   display: flex;
   flex-direction: row;
@@ -149,7 +144,7 @@ li.member {
 
 .childShow {
   opacity: 0;
-  transition: opacity 2.5s ease-out;
+  transition: opacity 1s ease-out;
   height: 0;
   overflow: hidden;
 }
@@ -157,7 +152,7 @@ li.member {
 .childShow.active {
   display: block;
   opacity: 1;
-  transition: opacity 2.5s ease-out;
+  transition: opacity 1s ease-out;
   height: auto;
 }
 
